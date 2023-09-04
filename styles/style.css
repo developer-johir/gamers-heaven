@@ -124,6 +124,50 @@ button a{
 }
 /* Header Styles end */
 
+/* ____ Main Style Start____ */
+/* ------ Funny Video- Style Start ------ */
+main{
+    padding: 0 50px;
+}
+.funny-video-container{
+    margin: 60px 0;
+}
+.video-title{
+    text-align: center;
+}
+.video-title h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0B0223;
+}
+.video-title span{
+    color: #8658f1d5;
+}
+.video-title p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #534C64;
+    margin: 20px 0 60px 0;
+}
+.funny-video{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.video-card{
+    width: 340px;
+}
+.video-card img{
+    width: 100%;
+}
+.video-card p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #534C64;
+    margin-top: 20px;
+}
+/* Funny Video- Style End */
+
 
 
 
@@ -133,7 +177,8 @@ button a{
 @media screen and (max-width: 600px) {
     nav,
     .menu-item, ul,
-    .banner-container
+    .banner-container,
+    .funny-video
     {
         flex-direction: column;
     }
@@ -161,5 +206,17 @@ button a{
         background-position: right;
         padding: 50px;
         margin: 20px;
+    }
+    .video-title h2{
+        font-size: 1.7rem;
+    }
+    .video-title p{
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 40px;
+    }
+    .video-card p{
+        font-size: 16px;
+        margin: 18px 0 20px 0;
     }
 }
