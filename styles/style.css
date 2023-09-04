@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Lato:wght@100;300;400&family=Open+Sans:wght@700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700&family=Work+Sans:wght@400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Berkshire Swash", cursive;
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Work Sans", sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- Header Navbar Styles Start ---- */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.logo{
+    width: 450px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.logo h2{
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: #0B0223;
+}
+.logo h2 > span{
+    color: #FF42A5;
+}
+
+.menu-item{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+.menu-item ul{
+    display: flex;
+    gap: 32px;
+}
+.menu-item li{
+    list-style: none;
+}
+.menu-item li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #3C354F;
+}
+button{
+    padding: 15px;
+    border: 0;
+    border-radius: 5px;
+}
+button a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #3C354F;
+}
+.fa-youtube{
+    color: #F61C0D;
+    font-size: 22px;
+    margin: 0 7px;
+    cursor: pointer;
+}
+.fa-tiktok{
+    font-size: 20px;
+    cursor: pointer;
+}
+/* Navbar Style end*/
+/*--- Banner Style Start ---*/
+
+/* Header Styles end */
+
+
+
+
+
+
+/* ----------- Media Query Mobile Devices Start ------------ */
+@media screen and (max-width: 600px) {
+    nav,
+    .menu-item, ul
+    {
+        flex-direction: column;
+    }
+    .logo{
+        width: 100%;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+    .logo img{
+        width: 60px;
+    }
+    .logo h2{
+        font-size: 24px;
+    }
+}
