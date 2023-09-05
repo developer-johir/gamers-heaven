@@ -113,6 +113,7 @@ button a{
     border-radius: 48px;
     padding: 20px 40px;
     background-color: #FF42A5;
+    cursor: pointer;
 }
 .btn-2{
     background-color: #4EC5F7;
@@ -197,16 +198,6 @@ main{
     opacity: 0.6;
     cursor: pointer;
 }
-/* .play-btn{
-    display: none;
-}
-.watch-icon:hover .play-btn{
-    display: block;
-    position: absolute;
-    left: 120px;
-    bottom: 100px;
-    text-align: center;
-} */
 /* Funny Video- Style End */
 
 /* ------- Online Games Styles Start ------- */
@@ -274,6 +265,7 @@ main{
     font-weight: 600;
     background-color: #fff;
     border: 1px solid #fff;
+    cursor: pointer;
 }
 .games-item button:hover{
      border: 1px solid #FF42A5;
@@ -342,10 +334,8 @@ main{
 
 
 
-
-
 /* ----------- Media Query Mobile Devices Start ------------ */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
     nav,
     .menu-item, ul,
     .banner-container,
@@ -476,5 +466,49 @@ main{
         font-weight: 400;
         margin-top: 20px;
         line-height: 30px;
+    }
+}
+/* -- Media Query Mobile Devices End -- */
+
+
+/* ----------- Media Query Tablet Devices Start ------------ */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    nav{
+       flex-direction: column;
+       gap: 30px;
+    }
+    .banner-container,
+    .online-games
+    {
+        flex-direction: column-reverse;
+        background: none;
+    }
+    .banner-content{
+        margin-top: 30px;
+    }
+    .funny-video{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .games-content{
+        text-align: center;
+        width: 70%;
+        margin-left: 0;
+    }
+    .online-games{
+        gap: 50px;
+        margin: 10px;
+    }
+    .games-img{
+        width: 80%;
+    }
+    #small-img img{
+        left: 350px;
+        bottom: -80px;
+    }
+
+    .games-item button{
+        width: 200px;
+        font-size: 14px;
     }
 }
