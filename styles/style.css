@@ -166,17 +166,54 @@ main{
     color: #534C64;
     margin-top: 20px;
 }
+
+.watch-icon{
+    position: relative;
+}
+.play-btn{
+    color: #fff;
+    opacity: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+}
+.play-btn i{
+    font-size: 30px;
+    margin-left: -10px;
+    color: #0B0223;
+}
+.play-btn p{
+    color: #51223a;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: -50px;
+    margin-top: 8px;
+}
+.watch-icon:hover .play-btn{
+    opacity: 1;
+    cursor: pointer;
+}
+.watch-icon:hover img{
+    opacity: 0.6;
+    cursor: pointer;
+}
+/* .play-btn{
+    display: none;
+}
+.watch-icon:hover .play-btn{
+    display: block;
+    position: absolute;
+    left: 120px;
+    bottom: 100px;
+    text-align: center;
+} */
 /* Funny Video- Style End */
 
 /* ------- Online Games Styles Start ------- */
 .online-games{
     display: flex;
     align-items: center;
-    gap: 230px;
-    margin: 90px 0;
-}
-.games-img{
-    width: 50%;
+    margin: 90px auto;
 }
 .games-img img{
     width: 100%;
@@ -187,12 +224,12 @@ main{
 #small-img img{
     width: 50%;
     position: absolute;
-    bottom: -130px;
-    left: 500px;
+    bottom: -100px;
+    left: 400px;
 }
 .games-content{
     width: 50%;
-    padding-right: 200px;
+    margin-left: 200px;
 }
 .games-content h2{
     width: 425px;
@@ -215,9 +252,7 @@ main{
 
 /* ---- Games Category Style Start ----- */
 .games-category-container{
-    padding: 50px 0;
-    margin-top: 200px;
-    background-color: rgba(240, 248, 255, 0.458);
+    padding: 80px 0;
 }
 .games-item{
     display: flex;
@@ -333,17 +368,6 @@ main{
     .logo h2{
         font-size: 24px;
     }
-    .footer-logo{
-        width: 100%;
-        margin-bottom: 20px;
-        justify-content: center;
-    }
-    .footer-logo img{
-        width: 60px;
-    }
-    .footer-logo h2{
-        font-size: 30px;
-    }
     .banner-container,
     .online-games
     {
@@ -369,6 +393,11 @@ main{
         font-size: 16px;
         margin: 18px 0 20px 0;
     }
+    .play-btn p{
+        margin-left: -40px;
+    }
+
+
     .online-games{
         gap: 50px;
         margin: 10px;
@@ -376,7 +405,7 @@ main{
     .games-content{
         text-align: center;
         width: 100%;
-        padding-right: 0;
+        margin-left: 0;
     }
     .games-content h2{
         width: 100%;
@@ -410,6 +439,18 @@ main{
         font-size: 10px;
         font-weight: 400;
         gap: 5px;
+    }
+
+    .footer-logo{
+        width: 100%;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+    .footer-logo img{
+        width: 60px;
+    }
+    .footer-logo h2{
+        font-size: 30px;
     }
 
     .footer-menu ul, .footer-icon ul{
