@@ -213,6 +213,40 @@ main{
 }
 /* Online Games Styles End */
 
+/* ---- Games Category Style Start ----- */
+.games-category-container{
+    padding: 50px 0;
+    margin-top: 200px;
+    background-color: rgba(240, 248, 255, 0.458);
+}
+.games-item{
+    display: flex;
+    gap: 20px;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.games-item img{
+    width: 40px;
+}
+.games-item button{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 210px;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+.games-item button:hover{
+     border: 1px solid #FF42A5;
+     color: #FF42A5;
+     background-color: #ffffff;
+}
+/* Games Category Style End */
+
 
 
 
@@ -290,5 +324,23 @@ main{
     #small-img img{
         left: 200px;
         bottom: -80px;
+    }
+
+    .games-category-container{
+        background-color: #fff;
+        margin-top: 90px;
+    }
+    .games-item{
+        gap: 0px;
+        justify-content: center;
+    }
+    .games-item img{
+        width: 20px;
+    }
+    .games-item button{
+        width: 100px;
+        font-size: 10px;
+        font-weight: 400;
+        gap: 5px;
     }
 }
