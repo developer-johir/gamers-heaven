@@ -168,6 +168,51 @@ main{
 }
 /* Funny Video- Style End */
 
+/* ------- Online Games Styles Start ------- */
+.online-games{
+    display: flex;
+    align-items: center;
+    gap: 230px;
+    margin: 90px 0;
+}
+.games-img{
+    width: 50%;
+}
+.games-img img{
+    width: 100%;
+}
+#small-img{
+    position: relative;
+}
+#small-img img{
+    width: 50%;
+    position: absolute;
+    bottom: -130px;
+    left: 500px;
+}
+.games-content{
+    width: 50%;
+    padding-right: 200px;
+}
+.games-content h2{
+    width: 425px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0B0223;
+}
+.games-content span{
+    color: #8658f184;
+}
+.games-content p{
+    width: 485px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #534C64;
+    line-height: 30px;
+    margin-top: 25px;
+}
+/* Online Games Styles End */
+
 
 
 
@@ -178,7 +223,8 @@ main{
     nav,
     .menu-item, ul,
     .banner-container,
-    .funny-video
+    .funny-video,
+    .online-games
     {
         flex-direction: column;
     }
@@ -196,7 +242,9 @@ main{
     .logo h2{
         font-size: 24px;
     }
-    .banner-container{
+    .banner-container,
+    .online-games
+    {
         flex-direction: column-reverse;
         background: none;
     }
@@ -218,5 +266,29 @@ main{
     .video-card p{
         font-size: 16px;
         margin: 18px 0 20px 0;
+    }
+    .online-games{
+        gap: 50px;
+        margin: 10px;
+    }
+    .games-content{
+        text-align: center;
+        width: 100%;
+        padding-right: 0;
+    }
+    .games-content h2{
+        width: 100%;
+        font-size: 35px;
+    }
+    .games-content p{
+        width: 100%;
+        font-size: 14px;
+    }
+    .games-img{
+        width: 100%;
+    }
+    #small-img img{
+        left: 200px;
+        bottom: -80px;
     }
 }
